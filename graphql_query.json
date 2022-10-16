@@ -50,6 +50,7 @@ query ($device_id: ID!) {
         address
         tags {
           id
+          slug
         }
       }
       connected_circuit_termination {
@@ -82,6 +83,14 @@ query ($device_id: ID!) {
       }
       tags {
         id
+        slug
+      }
+      lag {
+        name
+        enabled
+      }
+      member_interfaces {
+        name
       }
     }
   }
