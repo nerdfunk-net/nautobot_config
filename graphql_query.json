@@ -62,9 +62,6 @@ query ($device_id: ID!) {
           }
         }
       }
-      tagged_vlans {
-        id
-      }
       untagged_vlan {
         id
       }
@@ -76,10 +73,7 @@ query ($device_id: ID!) {
         color
       }
       tagged_vlans {
-        site {
-          name
-        }
-        id
+        name
       }
       tags {
         id
