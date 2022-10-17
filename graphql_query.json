@@ -64,8 +64,11 @@ query ($device_id: ID!) {
           }
         }
       }
+      tagged_vlans {
+        name
+      }
       untagged_vlan {
-        id
+        name
       }
       cable {
         termination_a_type
@@ -73,9 +76,6 @@ query ($device_id: ID!) {
           name
         }
         color
-      }
-      tagged_vlans {
-        name
       }
       tags {
         id
