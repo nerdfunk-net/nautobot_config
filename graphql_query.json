@@ -42,10 +42,12 @@ query ($device_id: ID!) {
       }
     }
     interfaces {
-      description
-      mac_address
-      enabled
       name
+      description
+      enabled
+      mac_address
+      type
+      mode
       ip_addresses {
         address
         tags {
