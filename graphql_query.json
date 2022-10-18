@@ -50,6 +50,7 @@ query ($device_id: ID!) {
       mode
       ip_addresses {
         address
+        role
         tags {
           id
           slug
