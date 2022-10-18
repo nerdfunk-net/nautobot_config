@@ -69,6 +69,7 @@ query ($device_id: ID!) {
       }
       untagged_vlan {
         name
+        vid
       }
       cable {
         termination_a_type
