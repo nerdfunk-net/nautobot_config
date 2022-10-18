@@ -33,7 +33,6 @@ query ($device_id: ID!) {
       name
       slug
       vlans {
-        id
         name
         vid
       }
@@ -52,7 +51,6 @@ query ($device_id: ID!) {
         address
         role
         tags {
-          id
           slug
         }
       }
