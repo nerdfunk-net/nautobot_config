@@ -2,17 +2,9 @@ query ($device_id: ID!) {
   device(id: $device_id) {
     config_context
     hostname: name
-    position
     serial
     primary_ip4 {
-      id
-      primary_ip4_for {
-        id
-        name
-      }
-    }
-    tenant {
-      name
+      address
     }
     tags {
       name
